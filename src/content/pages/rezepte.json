@@ -1,0 +1,46 @@
+{
+  "sections": [
+    {
+      "type": "hero",
+      "data": {
+        "title": "Rezepte – einfach & familientauglich",
+        "subtitle": "Klassiker in moderner Optik.",
+        "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&h=400&fit=crop&crop=center"
+      }
+    },
+    {
+      "type": "features",
+      "data": {
+        "title": "Kuchen & Snacks",
+        "items": [
+          {
+            "name": "Vanille-Gugelhupf",
+            "description": "Klassisch, aber zeitlos schön",
+            "icon": "🍰"
+          },
+          {
+            "name": "Obstspieße",
+            "description": "Farbenfroh und gesund",
+            "icon": "🍓"
+          },
+          {
+            "name": "Hausgemachte Limo",
+            "description": "Ohne künstliche Zusätze",
+            "icon": "🍋"
+          }
+        ]
+      }
+    },
+    {
+      "type": "steps",
+      "data": {
+        "title": "Backen in 3 Schritten",
+        "steps": [
+          "Teig & Form",
+          "Backen & Abkühlen",
+          "Deko minimal"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+---
+interface Props {
+  title: string;
+  subtitle?: string;
+  actions?: Array<{ label: string; href: string; primary?: boolean }>;
+}
+
+const { title, subtitle, actions = [] } = Astro.props;
+---
+
+<section class="bg-accent/10">
+  <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 py-12 md:py-16">
+    <div class="text-center">
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-ink tracking-tight mb-6">
+        {title}
+      </h2>
+      
+      {subtitle && (
+        <p class="font-body text-xl text-muted mb-8 max-w-2xl mx-auto">
+          {subtitle}
+        </p>
+      )}
+      
+      {actions.length > 0 && (
+        <div class="flex flex-wrap justify-center gap-4">
+          {actions.map((action) => (
+            <a
+              href={action.href}
+              class={`inline-flex items-center px-6 py-3 rounded-lg font-semibold transition-colors ${
+                action.primary !== false
+                  ? 'bg-accent hover:bg-accent/90 text-ink'
+                  : 'border-2 border-accent hover:bg-accent hover:text-ink text-accent bg-bg'
+              }`}
+            >
+              {action.label}
+            </a>
+          ))}
+        </div>
+      )}
+    </div>
+  </div>
+</section>

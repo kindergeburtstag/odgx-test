@@ -1,0 +1,75 @@
+{
+  "sections": [
+    {
+      "type": "hero",
+      "data": {
+        "title": "Spielideen – ruhig & fröhlich",
+        "subtitle": "Einfache Spiele mit wenig Material.",
+        "ctas": [
+          { "label": "Alle Spiele ansehen", "href": "#" }
+        ],
+        "image": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=600&h=400&fit=crop&crop=center"
+      }
+    },
+    {
+      "type": "problem",
+      "data": {
+        "title": "Typische Probleme",
+        "pains": [
+          "Zu laut",
+          "Überdreht",
+          "Materialschlacht"
+        ],
+        "solutionPoints": [
+          "Kooperative Spiele",
+          "Klare Rituale",
+          "Kurze, flexible Phasen"
+        ]
+      }
+    },
+    {
+      "type": "features",
+      "data": {
+        "title": "Unsere Favoriten",
+        "items": [
+          {
+            "name": "Farbenreise",
+            "description": "Gegenstände in bestimmten Farben sammeln",
+            "icon": "🎨"
+          },
+          {
+            "name": "Motto-Armbänder",
+            "description": "Gemeinsam basteln und tragen",
+            "icon": "💫"
+          },
+          {
+            "name": "Leise Schatzsuche",
+            "description": "Rätsel ohne Rennen und Schreien",
+            "icon": "🕵️"
+          },
+          {
+            "name": "Geschichtenstaffel",
+            "description": "Kreativität statt Schnelligkeit",
+            "icon": "📚"
+          }
+        ]
+      }
+    },
+    {
+      "type": "faq",
+      "data": {
+        "title": "Spiele-FAQ",
+        "faqs": [
+          {
+            "q": "Drinnen?",
+            "a": "Bewegung light + Kreativ-Stationen."
+          },
+          {
+            "q": "Draußen?",
+            "a": "Kurze Wege, kleine Gruppen."
+          }
+        ]
+      }
+    }
+  ]
+}

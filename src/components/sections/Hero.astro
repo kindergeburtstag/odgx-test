@@ -1,0 +1,67 @@
+---
+interface Props {
+  title: string;
+  subtitle?: string;
+  badges?: string[];
+  ctas?: Array<{ label: string; href: string; primary?: boolean }>;
+  image?: string;
+}
+
+const { title, subtitle, badges = [], ctas = [], image } = Astro.props;
+---
+
+<section class="bg-bg">
+  <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 py-12 md:py-16">
+    <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+      <div class="lg:order-1">
+        {badges.length > 0 && (
+          <div class="flex flex-wrap gap-2 mb-6">
+            {badges.map((badge) => (
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-sand text-ink">
+                {badge}
+              </span>
+            ))}
+          </div>
+        )}
+        
+        <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-ink tracking-tight mb-6">
+          {title}
+        </h1>
+        
+        {subtitle && (
+          <p class="font-body text-xl md:text-2xl text-muted mb-8 leading-relaxed">
+            {subtitle}
+          </p>
+        )}
+        
+        {ctas.length > 0 && (
+          <div class="flex flex-wrap gap-4">
+            {ctas.map((cta) => (
+              <a
+                href={cta.href}
+                class={`inline-flex items-center px-6 py-3 rounded-lg font-semibold transition-colors ${
+                  cta.primary !== false
+                    ? 'bg-accent hover:bg-accent/90 text-ink'
+                    : 'border-2 border-accent hover:bg-accent hover:text-ink text-accent'
+                }`}
+              >
+                {cta.label}
+              </a>
+            ))}
+          </div>
+        )}
+      </div>
+      
+      {image && (
+        <div class="lg:order-2">
+          <img
+            src={image}
+            alt="Kindergeburtstag Inspiration"
+            class="w-full h-auto rounded-2xl shadow-lg"
+            loading="eager"
+          />
+        </div>
+      )}
+    </div>
+  </div>
+</section>

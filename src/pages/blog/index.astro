@@ -1,0 +1,9 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionRenderer from '../../components/SectionRenderer.astro';
+import cfg from '../../content/pages/blog.json';
+---
+
+<BaseLayout title="Kindergeburtstag Blog - Tipps & Inspiration">
+  <SectionRenderer sections={cfg.sections} />
+</BaseLayout>

@@ -1,0 +1,51 @@
+{
+  "sections": [
+    {
+      "type": "hero",
+      "data": {
+        "title": "Checklisten & Downloads",
+        "subtitle": "Alles auf einen Blick – zum Abhaken."
+      }
+    },
+    {
+      "type": "features",
+      "data": {
+        "title": "Inhalte",
+        "items": [
+          {
+            "name": "Zeitplan: 2 Wochen",
+            "description": "Von der Planung bis zum Tag X",
+            "icon": "📅"
+          },
+          {
+            "name": "Einkauf & Material",
+            "description": "Nichts vergessen, nichts zu viel",
+            "icon": "🛒"
+          },
+          {
+            "name": "Spiele nach Alter",
+            "description": "3-5, 6-8, 9-10 Jahre sortiert",
+            "icon": "🎯"
+          },
+          {
+            "name": "Wetter-Plan B",
+            "description": "Backup für jeden Fall",
+            "icon": "☔"
+          }
+        ]
+      }
+    },
+    {
+      "type": "faq",
+      "data": {
+        "title": "Fragen zu Checklisten",
+        "faqs": [
+          {
+            "q": "PDF oder mobil?",
+            "a": "Beides – mobil abhakbar."
+          }
+        ]
+      }
+    }
+  ]
+}

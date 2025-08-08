@@ -1,0 +1,66 @@
+{
+  "sections": [
+    {
+      "type": "hero",
+      "data": {
+        "title": "Deko & Motto – sanfte Töne",
+        "subtitle": "Natürliche Materialien, Terracotta, Sand & Salbei.",
+        "image": "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=600&h=400&fit=crop&crop=center"
+      }
+    },
+    {
+      "type": "usp",
+      "data": {
+        "title": "Stilprinzipien",
+        "items": [
+          "Weniger ist mehr",
+          "Wiederverwendbar",
+          "Natürliche Texturen"
+        ]
+      }
+    },
+    {
+      "type": "comparison",
+      "data": {
+        "title": "Drinnen vs. Draußen",
+        "left": [
+          "Tisch pur",
+          "Kerzen, Stoffservietten"
+        ],
+        "right": [
+          "Picknickdecken",
+          "Girlanden im Baum"
+        ],
+        "caption": "Beides funktioniert minimalistisch."
+      }
+    },
+    {
+      "type": "features",
+      "data": {
+        "title": "Mottos ohne Plastik",
+        "items": [
+          {
+            "name": "Natur",
+            "description": "Äste, Blätter, Steine",
+            "icon": "🌳"
+          },
+          {
+            "name": "Sterne",
+            "description": "Gold & Creme Töne",
+            "icon": "⭐"
+          },
+          {
+            "name": "Safari",
+            "description": "Erdtöne & Naturfasern",
+            "icon": "🦁"
+          },
+          {
+            "name": "Wald",
+            "description": "Grün & Braun harmonisch",
+            "icon": "🍃"
+          }
+        ]
+      }
+    }
+  ]
+}

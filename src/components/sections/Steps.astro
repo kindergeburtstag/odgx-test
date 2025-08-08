@@ -1,0 +1,39 @@
+---
+interface Props {
+  title: string;
+  steps: string[];
+}
+
+const { title, steps } = Astro.props;
+---
+
+<section class="bg-paper">
+  <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 py-12 md:py-16">
+    <h2 class="font-display text-3xl md:text-4xl font-bold text-ink tracking-tight text-center mb-12">
+      {title}
+    </h2>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {steps.map((step, index) => (
+        <div class="relative">
+          <div class="bg-bg rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center mb-4 mx-auto">
+              <span class="text-ink font-bold text-lg">{index + 1}</span>
+            </div>
+            <p class="font-body text-ink font-medium text-center">
+              {step}
+            </p>
+          </div>
+          
+          {index < steps.length - 1 && (
+            <div class="hidden lg:block absolute top-1/2 -right-3 transform -translate-y-1/2">
+              <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

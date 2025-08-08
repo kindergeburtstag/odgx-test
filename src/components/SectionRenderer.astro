@@ -1,0 +1,46 @@
+---
+import Hero from './sections/Hero.astro';
+import USP from './sections/USP.astro';
+import About from './sections/About.astro';
+import Steps from './sections/Steps.astro';
+import Comparison from './sections/Comparison.astro';
+import Trust from './sections/Trust.astro';
+import Contact from './sections/Contact.astro';
+import ProblemSolver from './sections/ProblemSolver.astro';
+import Price from './sections/Price.astro';
+import Industries from './sections/Industries.astro';
+import Features from './sections/Features.astro';
+import BlogFeed from './sections/BlogFeed.astro';
+import FAQ from './sections/FAQ.astro';
+
+interface Props {
+  sections: Array<{ type: string; data?: any }>;
+}
+
+const { sections } = Astro.props;
+
+const registry = {
+  hero: Hero,
+  usp: USP,
+  about: About,
+  steps: Steps,
+  comparison: Comparison,
+  trust: Trust,
+  contact: Contact,
+  problem: ProblemSolver,
+  price: Price,
+  industries: Industries,
+  features: Features,
+  blog: BlogFeed,
+  faq: FAQ,
+};
+---
+
+{sections.map((section) => {
+  const Component = registry[section.type as keyof typeof registry];
+  if (!Component) {
+    console.warn(`Unknown section type: ${section.type}`);
+    return null;
+  }
+  return <Component {...(section.data || {})} />;
+})}

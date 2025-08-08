@@ -1,0 +1,51 @@
+---
+interface Props {
+  title: string;
+  pains: string[];
+  solutionPoints: string[];
+}
+
+const { title, pains, solutionPoints } = Astro.props;
+---
+
+<section class="bg-bg">
+  <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 py-12 md:py-16">
+    <h2 class="font-display text-3xl md:text-4xl font-bold text-ink tracking-tight text-center mb-12">
+      {title}
+    </h2>
+    
+    <div class="grid lg:grid-cols-2 gap-12">
+      <div>
+        <h3 class="font-body text-2xl font-semibold text-ink mb-6 text-center">
+          😩 Herausforderungen
+        </h3>
+        <div class="space-y-4">
+          {pains.map((pain) => (
+            <div class="flex items-center p-4 bg-red-50 rounded-lg border-l-4 border-red-200">
+              <svg class="w-5 h-5 text-red-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <span class="font-body text-red-800">{pain}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div>
+        <h3 class="font-body text-2xl font-semibold text-ink mb-6 text-center">
+          ✨ Unsere Lösungen
+        </h3>
+        <div class="space-y-4">
+          {solutionPoints.map((solution) => (
+            <div class="flex items-center p-4 bg-sage/20 rounded-lg border-l-4 border-sage">
+              <svg class="w-5 h-5 text-sage mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="font-body text-ink">{solution}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

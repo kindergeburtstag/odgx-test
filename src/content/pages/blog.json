@@ -1,0 +1,29 @@
+{
+  "sections": [
+    {
+      "type": "hero",
+      "data": {
+        "title": "Blog – ruhig feiern, schön gestalten",
+        "subtitle": "Suchmaschinenfreundliche Artikel – klar gegliedert."
+      }
+    },
+    {
+      "type": "blog",
+      "data": {
+        "title": "Neueste Artikel"
+      }
+    },
+    {
+      "type": "faq",
+      "data": {
+        "title": "Allgemeine Fragen",
+        "faqs": [
+          {
+            "q": "Warum minimalistisch?",
+            "a": "Weniger Reize = entspanntere Kinder."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "sections": [
+    {
+      "type": "hero",
+      "data": {
+        "title": "Kindergeburtstag? Entspannt. Schön. Unvergesslich.",
+        "subtitle": "Ruhige Spiele, warme Deko, einfache Rezepte – ohne Stress.",
+        "badges": ["Werbefrei", "Checklisten", "1–10 Jahre"],
+        "ctas": [
+          { "label": "Zum Ratgeber", "href": "/" },
+          { "label": "Spiele entdecken", "href": "/spiele", "primary": false }
+        ],
+        "image": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=600&h=400&fit=crop&crop=center"
+      }
+    },
+    {
+      "type": "usp",
+      "data": {
+        "title": "Warum diese Seite?",
+        "items": [
+          "Altersgerechte Ideen (3–10)",
+          "Minimalistische Deko in warmen Farben",
+          "Checklisten & Zeitplan",
+          "Outdoor & Plan-B für drinnen"
+        ]
+      }
+    },
+    {
+      "type": "steps",
+      "data": {
+        "title": "Ablauf in 4 Schritten",
+        "steps": [
+          "Gästeliste & Einladungen",
+          "Deko & Einkauf",
+          "Kuchen & Snacks",
+          "Spiele & ruhiger Abschluss"
+        ]
+      }
+    },
+    {
+      "type": "features",
+      "data": {
+        "title": "Beliebte Themen",
+        "items": [
+          {
+            "name": "Schatzsuche leicht",
+            "description": "Einfache Rätsel für drinnen und draußen",
+            "icon": "🗺️"
+          },
+          {
+            "name": "Mottos ohne Plastik",
+            "description": "Natürliche Materialien, warme Farben",
+            "icon": "🌿"
+          },
+          {
+            "name": "Ruhige Bewegungsspiele",
+            "description": "Spaß ohne Überforderung",
+            "icon": "🎯"
+          },
+          {
+            "name": "Vanille-Gugelhupf",
+            "description": "Der Klassiker in moderner Optik",
+            "icon": "🍰"
+          }
+        ]
+      }
+    },
+    {
+      "type": "trust",
+      "data": {
+        "title": "Bewährt bei Eltern",
+        "quotes": [
+          {
+            "text": "Endlich kein Overload – die Kids waren super entspannt.",
+            "author": "Lea, 2. Klasse"
+          }
+        ]
+      }
+    },
+    {
+      "type": "faq",
+      "data": {
+        "title": "FAQ",
+        "faqs": [
+          {
+            "q": "Wie lange feiern?",
+            "a": "3–5 J.: ~2h, ab Schule: 3–4h – mit Pausen und klarem Ablauf."
+          },
+          {
+            "q": "Wieviele Kinder?",
+            "a": "Faustregel: Alter des Kindes ±1."
+          }
+        ]
+      }
+    },
+    {
+      "type": "contact",
+      "data": {
+        "title": "Noch Fragen?",
+        "subtitle": "Schreib uns – wir helfen beim Plan.",
+        "actions": [
+          { "label": "Kontakt", "href": "#" }
+        ]
+      }
+    }
+  ]
+}

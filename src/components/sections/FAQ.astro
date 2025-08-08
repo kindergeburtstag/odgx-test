@@ -1,0 +1,55 @@
+---
+interface Props {
+  title: string;
+  faqs: Array<{ q: string; a: string }>;
+}
+
+const { title, faqs } = Astro.props;
+---
+
+<section class="bg-paper">
+  <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 py-12 md:py-16">
+    <h2 class="font-display text-3xl md:text-4xl font-bold text-ink tracking-tight text-center mb-12">
+      {title}
+    </h2>
+    
+    <div class="max-w-3xl mx-auto">
+      <div class="space-y-4">
+        {faqs.map((faq, index) => (
+          <details class="bg-bg rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+            <summary class="cursor-pointer p-6 font-body font-semibold text-ink hover:text-accent transition-colors">
+              <span class="select-none">{faq.q}</span>
+            </summary>
+            <div class="px-6 pb-6 pt-0">
+              <p class="font-body text-muted leading-relaxed">
+                {faq.a}
+              </p>
+            </div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  details > summary {
+    list-style: none;
+  }
+  
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  details > summary::after {
+    content: '+';
+    float: right;
+    font-size: 1.5rem;
+    line-height: 1;
+    transition: transform 0.2s;
+  }
+  
+  details[open] > summary::after {
+    transform: rotate(45deg);
+  }
+</style>
